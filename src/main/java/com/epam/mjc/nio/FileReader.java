@@ -43,7 +43,7 @@ public class FileReader {
             }
             profile = new Profile(name, age, email, phone);
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
         return profile;
     }
